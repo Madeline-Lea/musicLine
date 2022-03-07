@@ -1,0 +1,46 @@
+<%- include('../partials/headerFooter.ejs') %>
+
+<article class="home">
+  <section class="text">
+    <h1>Administrator Login</h1>
+    <br />
+
+    <p>
+      Login into an account to proceed into <br />
+      admin tools.
+    </p>
+  </section>
+</article>
+
+<article class="boxLogin">
+  <div class="form">
+    <form>
+      <p class="text'">Username:</p>
+      <br />
+      <input
+        style="
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+        "
+        class="inputChange"
+        name="username"
+        type="text"
+        placeholder="Enter your username..."
+      />
+      <br />
+      <p class="text">Password:</p>
+      <br />
+      <input
+        class="inputChange"
+        type="password"
+        name="password"
+        placeholder="Enter your password..."
+      />
+      <br />
+      <div class="moveButtons">
+      <button type="submit" class="btnLogin">Login</button>
+      </div>
+    </form>
+  </div>
+</article>

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "Leonardo",
+    "password": "Timecop1983 The Midnight",
+    "database": "blog",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "blog",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "blog",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

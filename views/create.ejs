@@ -1,0 +1,36 @@
+<%- include ("./partials/headerFooter") %>
+<section class="home">
+  <div class="text">
+    <h3>Create a post</h3>
+    <br />
+    <p>Creation about the content of the blog:</p>
+  </div>
+
+  <form  method="POST" action="/posts/BxNEMLkaienME" class="contentPost">
+    <p class="darkMode">Title</p>
+    <section>
+      <textarea
+        name="title"
+        class="contentTitle"
+        placeholder="Insert the title"
+      ></textarea>
+    </section>
+
+    <p class="darkMode">Content</p>
+    <section>
+      <textarea
+        name="content"
+        class="content"
+        placeholder="Insert the content"
+      ></textarea>
+    </section>
+
+    <button type="submit" id="btnCreate">Post</button>
+  </form>
+</section>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  document.getElementById("btnCreate").addEventListener("click", function () {
+    Swal.fire("All right...", "A new post has been created!", "success");
+  });
+</script>

@@ -1,0 +1,23 @@
+<%- include('./partials/headerFooter.ejs') %>
+
+<article class="home">
+    <div class="text">
+        <h1>Delete a post</h1>
+        <br />
+        <p> If you delete a post the data will <br />
+            be totally erased.
+        </p>
+    </div>
+
+    <form>
+        <div class="paddingRight">
+            <input class="listPosts" list="posts" name="title" />
+            <datalist id="posts">
+                <option>Brazil Requires Some Music</option>
+                <option> Party in the USA, they've told us...</option>
+                <option>Ah, look it up this place</option>
+            </datalist>
+        </div>
+    </form>
+
+</article>

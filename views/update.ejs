@@ -1,0 +1,46 @@
+<%- include ("./partials/headerFooter.ejs") %>
+<section class="home">
+  <div class="text">
+    <h3>Update a Post</h3>
+    <br />
+    <p>Updating the blog content:</p>
+  </div>
+  <article class="contentPost">
+    <section>
+      <p class="darkMode"> Which Post?</p>
+      <select class="listPosts" name="updateTitle" >
+        <option value="none">Select a post...</option>
+        <% viewUD.forEach(viewUpdate => { %>
+        <option><%= viewUpdate.title %></option>
+        <% }); %>
+      </select>
+    </section>
+
+    <p class="darkMode">Title</p>
+
+    <section>
+      <textarea
+        name="title"
+        class="contentTitle"
+        placeholder="Update the title"
+      ></textarea>
+    </section>
+
+    <p class="darkMode">Content</p>
+    <section>
+      <textarea
+        name="content"
+        class="content"
+        placeholder="Update the content"
+      ></textarea>
+    </section>
+
+    <button type="submit" id="btnUpdate">Update</button>
+  </article>
+</section>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  document.getElementById("btnUpdate").addEventListener("click", function () {
+    Swal.fire("All right...", "Your post has been updated!", "success");
+  });
+</script>
